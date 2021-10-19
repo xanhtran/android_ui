@@ -4,13 +4,10 @@ package com.example.jetnote.ui.screens
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Scaffold
-import androidx.compose.material.ScaffoldState
-import androidx.compose.material.Text
+import androidx.compose.material.*
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.List
-import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
@@ -68,6 +65,16 @@ import kotlinx.coroutines.launch
                     )
                 }else{
                     Text(text="Opps")
+                }
+            },
+            floatingActionButton = {
+                FloatingActionButton(
+                    onClick = {
+
+                    }
+
+                ) {
+                    Text("+")
                 }
             }
         )
